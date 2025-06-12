@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <button class="toggle" aria-label="toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h1>Hello, I'm &lt;Your Name&gt;</h1>
+    <p>Front‑End Web Developer</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>A short bio about your skills, experience, and passions...</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>To‑Do App</h3>
+        <p>Persistent to‑do list built with localStorage.</p>
+        <a class="btn" href="todo.html">Open</a>
+      </div>
+      <div class="project-card">
+        <h3>Product Listing</h3>
+        <p>Filter &amp; sort demo of a product catalogue.</p>
+        <a class="btn" href="products.html">Open</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> &lt;Your Name&gt;</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
